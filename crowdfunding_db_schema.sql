@@ -1,7 +1,5 @@
 -- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
 
--- Shema for the crowdfunding database
-
 -- Create contacts table
 CREATE TABLE "contacts" (
     "contact_id" INT   NOT NULL,
@@ -61,3 +59,15 @@ REFERENCES "category" ("category_id");
 ALTER TABLE "campaign" ADD CONSTRAINT "fk_campaign_subcategory_id" FOREIGN KEY("subcategory_id")
 REFERENCES "subcategory" ("subcategory_id");
 
+
+-- Show the campaign table
+SELECT * FROM campaign
+
+-- Show the category table
+SELECT * FROM category
+
+-- Show the subcategory table
+SELECT * FROM subcategory
+
+-- Show the contacts table
+SELECT * FROM contacts
